@@ -1,15 +1,15 @@
 fun main() {
-    var n: Int = 10
-    var l: Long = 100
+    var n = 10
+    var l = 100
 
-    var b: Boolean = false
+    var b = false
 
-    var d: Double = 4.23
-    var f: Float = 4.23F
+    var d = 4.23
+    var f = 4.23F
 
-    var s: String = "Amigoscode"
-    var c: Char = 'C'
+    var s = "Amigoscode"
+    var c = 'C'
 
-    var any: Any = 17
-    var any1: Any = "Isostatic"
+    var any = 17
+    var any1 = "Isostatic"
 }
