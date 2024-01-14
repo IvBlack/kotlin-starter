@@ -1,3 +1,5 @@
+package com.iv4ndev
+
 fun main() {
     println(testSimple(2, 1))
     println(testString(46))
@@ -5,6 +7,10 @@ fun main() {
 
     testDefaultArgs(3, 5)
     testDefaultArgs(y = 24)
+
+    printEven(2,3,4,5,1,6,7,8,9)
+    println("array -> to varargs: ")
+    printEven(*intArrayOf(1,2,3,4), 5,6,7,8,9,10)
 }
 
 fun testSimple(x: Int, y: Int) = x + y
@@ -50,3 +56,9 @@ fun foo(name: String, number: Int = 42, toUpperCase: Boolean) {
     (if (toUpperCase) name.toUpperCase() else name) + number
 }
 //--------------------------------------------------------
+
+
+//varargs - перечисление параметров функции. Ведет себя как массив.
+fun printEven(vararg nums: Int) {
+    nums.forEach { e-> if(e % 2 == 0) println(e) }
+}
