@@ -24,4 +24,9 @@ fun main() {
     //Elvis-operator: если в b есть значение - вернется ее значение
     //иначе -> null
     val l = b?.length ?: -1
+
+    //---------------------------------
+    //!! - ВЫБРОСИТ NPE, если null
+    b = if((0..10).random() > 4) "somestring" else null
+    val t = b!!.length
 }
